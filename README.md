@@ -1,33 +1,48 @@
-# ASP.NET Core Web API with Dependency Injection
+# Customer Management REST API
 
 ## 📌 Project Overview
-A complete 3-tier Web API architecture built using ASP.NET Core
-demonstrating real-world software design patterns.
+A complete 3-tier ASP.NET Core Web API application demonstrating real-world architecture and RESTful service design. The project includes API development and multiple client-side integrations for consuming the API.
 
-## 📁 Projects
+## 🚀 Features
+- RESTful API with CRUD operations (GET, POST, PUT, DELETE)
+- 3-tier architecture for better scalability and maintainability
+- Dependency Injection using interface-based design (ICustomerDAL)
+- Cross-Origin Resource Sharing (CORS) configuration
+- API testing and documentation using Swagger UI
+- Multiple API consumers (jQuery Ajax and C# HttpClient)
 
-### 1. CoreWebApiService (API Backend)
-- ASP.NET Core Web API with REST endpoints
-- Dependency Injection Pattern (ICustomerDAL interface)
-- XML Data Source for CRUD Operations
-- Swagger UI for API Testing
-- CORS enabled for cross-origin requests
+## 🛠️ Tech Stack
+- Backend: ASP.NET Core Web API, C#
+- Data Source: XML
+- Frontend: jQuery, HTML, CSS
+- Client: C# HttpClient with MVC Razor Views
+- Tools: Swagger UI
 
-### 2. CoreWebApiConsumer1 (jQuery Ajax Frontend)
-- Consumed REST API using jQuery Ajax
-- Dynamic table with Insert, Update, Delete
-- Real-time data refresh without page reload
-
-### 3. CoreWebApiConsumer2 (C# HttpClient Frontend)
-- Consumed REST API using C# HttpClient
-- Full CRUD operations
-- MVC Views with Razor syntax
-
-## 💻 Tech Stack
-C# | ASP.NET Core | Web API | XML | jQuery | Swagger
-
-## 🔑 Key Concepts
-- Dependency Injection & Loose Coupling
-- REST API Design (GET, POST, PUT, DELETE)
+## ⚙️ Key Concepts Implemented
+- REST API Design
+- Dependency Injection and Loose Coupling
+- 3-Tier Architecture
 - CORS Configuration
-- JSON Serialization
+- JSON Serialization and Data Handling
+
+## 📂 Project Structure
+- **CoreWebApiService** – API backend with REST endpoints
+- **CoreWebApiConsumer1** – Frontend using jQuery Ajax
+- **CoreWebApiConsumer2** – MVC application using C# HttpClient
+
+## 🔗 API Endpoints (Sample)
+- GET /api/customers → Get all customers
+- GET /api/customers/{id} → Get customer by ID
+- POST /api/customers → Add new customer
+- PUT /api/customers/{id} → Update customer
+- DELETE /api/customers/{id} → Delete customer
+
+## ▶️ How to Run
+1. Clone the repository
+2. Open solution in Visual Studio
+3. Run CoreWebApiService project
+4. Access Swagger UI to test APIs
+5. Run consumer projects to interact with API
+
+## 👩‍💻 Author
+Gayathri Pulasetti
